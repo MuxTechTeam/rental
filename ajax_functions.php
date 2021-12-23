@@ -1075,18 +1075,29 @@ if (!function_exists('wpestate_get_booking_data')):
                 exit('you don\'t have the right to see this');
             }
         }
-
+        $bookingPost = get_post($internal_booking_id);
+        $renterID = $the_post->post_author;
+        $renterNiceName = get_user_meta($renterID , "nickname"  , true);
+        $renterData = get_userdata($renterID);
+        $renterEmail = $renterData->data->user_email;
+        
         $booking_from_date  =   get_post_meta($internal_booking_id, 'booking_from_date', true);
         $booking_to_date    =   get_post_meta($internal_booking_id, 'booking_to_date', true);
         $booking_guests     =   get_post_meta($internal_booking_id, 'booking_guests', true);
         $invoice_no         =   get_post_meta($internal_booking_id, 'booking_invoice_no', true);
+        $booking_pay_ammount=   get_post_meta($internal_booking_id, 'booking_pay_ammount', true);
 
         print __('Booking id', 'wprentals').': '.$internal_booking_id;
+
+        print'</br><span style="padding:2px;">'.esc_html__('Email', 'wprentals').': '.$renterEmail.'</span></br>';
+        print'<span style="padding:2px;">'.esc_html__('Amount', 'wprentals').': '.$booking_pay_ammount.'</span>';
+
         print'<div class="allinone-booking-data">'.esc_html__('From', 'wprentals').' '.wpestate_convert_dateformat_reverse($booking_from_date).' '.__('To ', 'wprentals').' '.wpestate_convert_dateformat_reverse($booking_to_date).'</div>';
         if (wprentals_get_option('wp_estate_item_rental_type')!=1) {
             print'<div class="allinone-booking-data-guests">'.esc_html__('Guests', 'wprentals').': '.$booking_guests.'</div>';
         }
         print'<div class="allinone-booking-data-invoice">'.esc_html__('Invoice', 'wprentals').': '.$invoice_no.'</div>';
+        
         die();
     }
 

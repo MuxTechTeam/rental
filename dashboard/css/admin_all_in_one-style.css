@@ -1,0 +1,308 @@
+/*= all in one*/
+
+.wprentals_allinone_wrapper{
+  padding: 15px;
+}
+
+.booking-calendar-wrapper-allinone{
+    background-color: #d0d5de;
+    height: 100%;
+    float: left;
+
+}
+
+.booking-calendar-wrapper-allinone .month-title{
+    background-color: #484848;
+    color: #CBCDD0;
+    padding: 13px 0px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.calendar_pad_title,
+.calendar_pad{
+    width: 28px;
+    height: 35px;
+    float: left;
+    text-align: center;
+    padding-top: 4px;
+    border: 1px solid #eee;
+}
+
+.calendar_pad_title{
+    height:75px;
+    padding-top: 0px;
+}
+
+.dayname{
+    width: 28px;
+    height: 35px;
+    background-color: #E0E4E9;
+    font-size: 12px;
+    color: #4D5567;
+    padding-top: 4px;
+    margin-bottom: 7px;
+}
+
+.calendar_tab_header{
+    display:inline;
+    float:left;
+    margin-bottom: 5px;
+}
+
+.property_tab_header{
+    width: 150px;
+    height: 80px;
+    float: left;
+    display: inline;
+}
+
+.property_tab_list_header{
+    clear: both;
+    width: 150px;
+    float: left;
+    background-color: #4D5567;
+    color: #CBCDD0;
+    height: 35px;
+    border-bottom: 1px solid #CBCDD0;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.property_tab_list_header a{
+    font-size:12px;
+    color: #CBCDD0;
+}
+.calendar-free.calendar_pad.has_future{
+    background-color: #fff;
+}
+
+.arrow-wrapper-allinone{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+#calendar-prev-internal-allinone{
+    position:absolute;
+    left:0px;
+    top:10px;
+    color: white;
+}
+
+#calendar-next-internal-allinone{
+    position:absolute;
+    right:0px;
+    top:10px;
+    color: white;
+}
+
+.allinone_reservation{
+    display:none;
+}
+
+.calendar_pad .rentals_reservation{
+    position: absolute;
+    width: 150px;
+    top: -38px;
+    height: 27px;
+    overflow: inherit;
+    background-color: #45cd72!important;
+}
+
+.calendar_pad.allinone_internal_booking  {
+    background-color:#45cd72!important
+}
+
+.calendar_pad .rentals_reservation:before{
+    bottom: -12px;
+    left: 0px;
+    content: " ";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-width: 13px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid #7648AF;
+}
+
+.calendar_pad.allinone_internal_booking .rentals_reservation {
+    position: absolute;
+    width: 213px;
+    top: -91px;
+    height: 80px;
+}
+.calendar_pad.allinone_internal_booking  .rentals_reservation:before{
+    border-top: 13px solid #45CD72;
+}
+
+.allinone-booking-data,
+.allinone-booking-data-invoice,
+.allinone-booking-data-guests{
+    float:left;
+}
+.allinone-booking-data-guests{
+    margin-right: 10px;
+}
+
+.calendar_pad_title.calendar-pad-hover,
+.calendar-free.calendar_pad.has_future.calendar-pad-hover,
+.calendar_pad.calendar-pad-hover,
+.calendar-pad-hover{
+    background-color: #D2DCED!important;
+}
+.calendar-reserved-admin{
+ background-color: #D2DCED!important;   
+}
+
+.arrow-wrapper-allinone_legend{
+    float:left;
+    width:100;
+    margin-top:30px;
+}
+.allinone_legend{
+    float: left;
+    margin-right: 20px;
+    margin-left: 3px;
+    padding-top: 4px;
+}
+
+
+
+.booking-calendar-wrapper-allinone  .calendar_pad_title, .calendar_pad,
+.booking-calendar-wrapper-allinone .dayname {
+    /*width: 35px;*/
+}
+
+.page-template-user_dashboard_edit_listing label{
+    width:100%;
+}
+
+.bed_wrapper{
+    margin-bottom: 10px;
+    padding: 10px;
+    position:relative;
+}
+
+.user_dashboard_panel #whole_beds_wrapper{
+    margin-left: 0px;
+}
+
+.user_dashboard_panel .beds_wrapper_control{
+    top: 13px;
+}
+
+.user_dashboard_panel .bed_wrapper{
+    margin-bottom:0px;
+}
+
+#whole_beds_wrapper{
+    padding: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.bed_wrapper:nth-child(odd){
+     background-color: #fafafc;
+}
+
+.bed_wrapper:nth-child(odd) .beds_no.form-control{
+  background-color: #fff;
+}
+
+
+.bedroom_input_val label{
+    width:100px;
+}
+.beds_wrapper_control{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #4ecb8f;
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bedroom_input_val{
+    width: 100%;
+    padding-left: 20px;
+}
+.beds_no.form-control{
+    width: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px!important;
+    line-height: 1.2em;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.beds_no.form-control:focus{
+      border-left: 1px solid #eceaf4;
+}
+
+#icalfeed_wrapper{
+    float:left;
+    background: #d0d5de;
+    padding: 10px;
+    width:100%;
+    margin-bottom: 20px;
+    max-width: 903px;
+}
+
+
+.form-control.property_icalendar_import_feed_new,
+.form-control.property_icalendar_import_name_new{
+    width:400px;
+    margin-bottom: 15px;
+}
+
+#add_extra_feed{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 15px;
+}
+
+
+.extra_detail_option_wrapper{
+    width: 100%;
+    float: left;
+}
+
+.add_option_wrapper #add_extra_option {
+    width: 22%;
+    margin: 0px;
+}
+
+.add_option_wrapper #add_option_name{
+    width: 24%;
+}
+
+.add_option_wrapper #add_option_value {
+    width: 17%;
+}
+.listingWarrapperContainer{
+    display: block;
+    width: 100%;
+    float: left;
+}
+.calanderWarrapperContainer{
+    display: block;
+    width: 100%;   
+    float: left;
+}
+.prop_categ{
+    display: block;
+    width: 150px;
+    background-color: green;
+    /*float: left;*/
+    color: white;
+    padding: 5px;
+}

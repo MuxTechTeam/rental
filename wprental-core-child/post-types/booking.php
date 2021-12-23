@@ -54,7 +54,11 @@ if( !function_exists('wpestate_populate_booking_columns') ):
         }
           
         if(  'booking_estate_period' == $column){
-            echo esc_html__( 'from','wprentals-core').' '.esc_html(get_post_meta($the_id, 'booking_from_date', true)).' '.esc_html__( 'to','wprentals-core').' '. esc_html(get_post_meta($the_id, 'booking_to_date', true));
+            $startDate = date("M d, y",get_post_meta($the_id, 'booking_from_date_unix', true));
+            $endDate = date("M d, y",get_post_meta($the_id, 'booking_to_date_unix', true));
+            // get_post_meta($the_id, 'booking_from_date', true)
+            // get_post_meta($the_id, 'booking_to_date', true)
+            echo esc_html__( 'from','wprentals-core').' '.esc_html($startDate).' '.esc_html__( 'to','wprentals-core').' '. esc_html($endDate);
         }
         
         if(  'booking_estate_listing' == $column){
